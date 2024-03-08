@@ -1,2 +1,2 @@
-# Gtm
+# GoTM
  GTmetrics
