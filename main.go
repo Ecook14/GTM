@@ -3,7 +3,8 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/Ecook14/GTM/api"
+
+	"github.com/Ecook14/GoTM/api"
 )
 
 func main() {

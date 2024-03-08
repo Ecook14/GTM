@@ -3,10 +3,9 @@ package api
 import (
 	"encoding/json"
 	"net/http"
-
-	"github.com/Ecook14/GTM/loader"
-	"github.com/Ecook14/GTM/analyzer"
-	"github.com/Ecook14/GTM/report"
+	"github.com/Ecook14/GoTM/loader"
+	"github.com/Ecook14/GoTM/analyzer"
+	"github.com/Ecook14/GoTM/report"
 )
 
 type AnalysisResponse struct {
