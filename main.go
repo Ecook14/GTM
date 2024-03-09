@@ -23,14 +23,17 @@ func main() {
 		}
 
 		// Fetch the PageSpeed Score and other metrics
-		score, err := pagespeed.GetPageSpeedScore(url)
+		detailedResponse, err := pagespeed.GetPageSpeedScore(url)
 		if err != nil {
 			http.Error(w, "Failed to fetch PageSpeed Score", http.StatusInternalServerError)
 			return
 		}
 
-		// Send the response
-		fmt.Fprintf(w, "PageSpeed Score: %s\n", score)
+		// Set the content type to application/json
+		w.Header().Set("Content-Type", "application/json")
+
+		// Send the detailed response
+		fmt.Fprint(w, detailedResponse)
 	})
 
 	// Start the HTTP server
