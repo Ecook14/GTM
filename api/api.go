@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"github.com/Ecook14/GoTM/loader"
-	"github.com/Ecook14/GoTM/analyzer"
+	"github.com/Ecook14/GoTM/analyser"
 	"github.com/Ecook14/GoTM/report"
 )
 
